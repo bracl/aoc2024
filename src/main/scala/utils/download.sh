@@ -8,8 +8,8 @@ echo "Pulling input for day $DAY"
 OUTPUT="/Users/bradley.king/dev/bracl/aoc2024/src/main/scala/day$DAY/in.txt"
 echo "Writing to file: $OUTPUT"
 
-URL="https://adventofcode.com/2023/day/$DAY/input"
-SESSION="53616c7465645f5f748367e0c6e6cef542e5c7df7f30f613b656408017f7370fa62739d684d930eb95dc2dc7be6f1641071a4b5c5d46118980ae90a19dc71c7b"
+URL="https://adventofcode.com/2024/day/$DAY/input"
+SESSION="53616c7465645f5fb02e46def58ace0689eb54bf0e6280815c4217cee44f2cbc4aa3204b25403dedbc22f95233f8828012792699abc0dcaec3d557a3919c90e1"
 
 curl -A "@bracl via curl" --location --request GET "$URL" --header "Cookie: session=$SESSION" -o "$OUTPUT"
 echo "Happy Solving :)"
