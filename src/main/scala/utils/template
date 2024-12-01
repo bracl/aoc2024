@@ -19,5 +19,5 @@ object dayDAY extends ZIOSpecDefault {
     assert(task)(Assertion.equalTo(0))
   }
 
-  override def spec: Spec[TestEnvironment with Scope, Any] = suite("DAY")(p1, p2) @@ TestAspect.sequential
+  override def spec: Spec[TestEnvironment & Scope, Any] = suite("DAY")(p1, p2) @@ TestAspect.sequential
 }
