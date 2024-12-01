@@ -19,5 +19,5 @@ DESTINATION="/Users/bradley.king/dev/bracl/aoc2024/src/main/scala/day$DAY/day$DA
 cp "/Users/bradley.king/dev/bracl/aoc2024/src/main/scala/utils/template" "$DESTINATION"
 sed -i.bak s/DAY/$DAY/g "$DESTINATION"
 sed -i.bak s/utils$/day$DAY/g "$DESTINATION"
-rm $DESTINATION.bak
-
+rm "$DESTINATION.bak"
+git add "$DESTINATION"
